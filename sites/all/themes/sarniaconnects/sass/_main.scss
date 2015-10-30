@@ -3,6 +3,11 @@
 	display:none;
 }
 
+#content
+{
+	padding:10px;
+}
+
 body
 {
 	font-family: 'Raleway', sans-serif;
@@ -103,9 +108,7 @@ body
 
 #main_page_section
 {
-	background-image:url(../images/Banner1.jpg);
 	height:500px;
-	background-size:cover;
 }
 
 #main-wrapper
@@ -248,13 +251,19 @@ body
 		}
 	}
 }
+
+#edit-submitted-email-newsletter-selection
+{
+	display:none;
+}
 	
-#block-webform-client-block-4
+#block-webform-client-block-4,
+#block-simplenews-1
 {	
 
 	padding-left:80px;
 	position: absolute;
-	bottom:65px;
+	bottom:62px;
 	right: 0;
 	width: 45%;
 
@@ -264,7 +273,8 @@ body
 		padding-left:0px;
 	}
 
-	.form-item-submitted-email-newsletter-email-address
+	.form-item-submitted-email-newsletter-email-address,
+	.form-item-mail
 	{	
 		position: relative;
 		margin: 35px 0px;
@@ -280,7 +290,13 @@ body
 		}
 	}
 
-	#edit-submitted-email-newsletter-email-address
+	label
+	{
+		display: none;
+	}
+
+	#edit-submitted-email-newsletter-email-address,
+	#edit-mail
 	{
 		border: 0px;
 		width: 84%;
@@ -305,6 +321,7 @@ body
 		width: 200px;
 		font-weight: bold;
 		text-transform: uppercase;
+		cursor: pointer;
 		box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 	}
 
@@ -328,17 +345,6 @@ body
 	:-ms-input-placeholder {  
 	   color: white;
 	}
-}
-
-.parallax
-{
-	background-repeat: no-repeat;
-	background-attachment:fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	-ms-behavior: url("/sites/all/themes/greatlakes/css/backgroundsize.htc");
 }
 
 .overlay
@@ -383,6 +389,8 @@ body
 {
 	position: fixed;
 	width: 100%;
+	background-image: url(../images/Banner1.jpg);
+	background-size: cover;
 }
 
 #header-inner

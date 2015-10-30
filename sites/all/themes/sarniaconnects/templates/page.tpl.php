@@ -92,31 +92,39 @@
     </div> <!-- /#header -->
 
     <div id="main-wrapper">
-     
-           <div id="main_page_section" class="parallax">
-              <?php print render($page['main_page_section']); ?>
-            </div>
+            <?php if ($page['main_page_section']): ?>
+             <div id="main_page_section" class="parallax">
+                <?php print render($page['main_page_section']); ?>
+              </div>
+             <?php endif; ?>
           <div id="about">
           </div>
-            
-          <div id="region1" >
-             
-                   <?php print render($page['region1']); ?>
-          </div>
           
+           <?php if ($page['region1']): ?>
+              <div id="region1" >
+                 
+                       <?php print render($page['region1']); ?>
+              </div>
+            <?php endif; ?>
+        
            <div id="events">
            </div>
-          <div id="region2"  class="region-content">
 
-              <?php print render($page['region2']); ?>
-         
-           </div>
-           <div id="region3" class="region-content">
+          <?php if ($page['region2']): ?>
 
-              <?php print render($page['region3']); ?>
-         
-           </div>
+            <div id="region2"  class="region-content">
 
+                <?php print render($page['region2']); ?>
+           
+             </div>
+          <?php endif; ?>
+           <?php if ($page['region3']): ?>
+               <div id="region3" class="region-content">
+
+                  <?php print render($page['region3']); ?>
+             
+               </div>
+          <?php endif; ?>
           <div id="content">
             <div>
               <div>
