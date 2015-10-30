@@ -16,6 +16,9 @@ input, select, textarea, button {
   min-height: 300px;
   margin-top: 10px;
   border-top: 4px solid #007bc0; }
+  #content #block-system-main {
+    max-width: 942px;
+    margin: 50px auto; }
 
 body {
   font-family: 'Raleway', sans-serif;
