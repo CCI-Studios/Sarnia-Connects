@@ -2,12 +2,10 @@ name = sarniaconnects
 description = sarniaconnects Custom
 core = 7.x
 
-scripts[] = js/bg-size.js
+scripts[] = js/script.js
 scripts[] = js/slick/slick.js
-;scripts[] = js/partner-scroll.js
-;scripts[] = js/menu-btn.js
-;scripts[] = js/map.js
-;scripts[] = js/placeholder.js
+;scripts[] = js/instagram.js
+
 
 stylesheets[all][] = css/screen.css
 stylesheets[all][] = js/slick/slick.css

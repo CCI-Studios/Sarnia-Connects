@@ -258,6 +258,8 @@ body {
   display: none;
   background-color: #007bc0;
   text-align: center; }
+  #block-block-4 .content {
+    padding: 30px 0px; }
 
 #block-views-banner-block {
   position: fixed;
