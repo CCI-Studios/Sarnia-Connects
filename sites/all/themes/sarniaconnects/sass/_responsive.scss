@@ -1,0 +1,122 @@
+@media screen and (max-width:940px)
+{
+	#footer #block-webform-client-block-4
+	{
+		padding-left: 40px;
+	}
+
+	#block-webform-client-block-4, #block-block-3
+	{
+		display: block;
+	}
+
+	#footer #block-webform-client-block-4
+	{
+		position: relative;
+		padding-left:0px;
+	}
+}
+
+
+@media screen and (max-width:940px)
+{	
+	#block-views-events-block
+	{
+		padding:50px 0px;
+	}
+
+	#footer #block-webform-client-block-4
+	{
+		padding-top:40px;
+		width:100%;
+	}
+
+	#block-block-1
+	{	
+		top:auto;
+		bottom:0px;
+	}
+
+	#header 
+	{	
+
+		height: 179px;
+		#logo
+		{
+			float: none;
+			text-align: center;
+		}
+		.region-header
+		{
+			float: none;
+			padding-top:35px;
+
+			ul.menu
+			{
+				text-align:center;
+			}
+		}
+	}
+	
+}
+
+@media screen and (min-width:561px)
+{	
+
+	#block-system-main-menu
+	{
+		display: block;
+	}
+}
+
+@media screen and (max-width:560px)
+{	
+	#region1, #region2, #footer
+	{
+		z-index: 999;
+	}
+
+	.view-banner .views-field-body .field-content
+	{
+		font-size: 1.5em;
+	}
+
+	#footer #block-webform-client-block-4 #edit-submitted-email-newsletter-email-address
+	{
+		width:80%;
+	}
+
+	#header > div
+	{
+		z-index: 99;
+	}
+	#block-block-5
+	{
+		display: block;
+		text-align: center;
+
+		a{
+			color:$blue;
+			text-decoration: none;
+			display: block;
+			
+		}
+	}
+
+	#block-system-main-menu
+	{
+		display: none;
+
+		li
+		{
+			list-style: none;
+			display: block;
+
+			a
+			{
+				display: block;
+				padding: 10px 0px;
+			}
+		}
+	}
+}
