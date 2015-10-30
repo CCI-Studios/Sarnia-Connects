@@ -156,13 +156,16 @@ body {
     font-size: 1.8em;
     padding-left: 0px; }
   #footer .content {
-    padding-bottom: 80px; }
+    padding-bottom: 80px;
+    padding-left: 0px; }
   #footer img {
     vertical-align: middle;
     padding-right: 10px; }
 
 #block-block-3 {
   display: inline-block; }
+  #block-block-3 h2 {
+    padding-left: 0px; }
 
 #block-webform-client-block-4 a,
 #block-block-3 a,
