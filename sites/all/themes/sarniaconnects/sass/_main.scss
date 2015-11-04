@@ -47,7 +47,7 @@ body
 	position:relative;
 	background:$blue;
 	color:white;
-	padding:40px 0px;
+	padding:80px 0px;
 
 	h2
 	{
@@ -77,9 +77,9 @@ body
 	}
 }
 
-#region1
+#region2
 {
-	padding-top:80px;
+	padding-top: 0;
 }
 
 #header > div
@@ -89,6 +89,7 @@ body
 	padding:21px 0px;
 	background:white;
 	border-top: 4px solid $blue;
+	z-index: 99;
 }
 
 #header
