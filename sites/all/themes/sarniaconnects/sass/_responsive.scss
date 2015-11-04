@@ -79,11 +79,48 @@
 }
 
 @media screen and (max-width:560px)
-{	
-	#header .region-header
+{
+	#header
 	{
-		padding-top:20px;
+		height: 73px;
+		
+		& > div
+		{
+			padding: 13px 0;
+		}
+		#logo
+		{
+			float: left;
+			
+			img
+			{
+				width: 130px;
+				height: auto;
+				display: block;
+			}
+		}
+		.region-header
+		{
+			float: right;
+			padding-top: 0;
+			position: static;
+		}
+		.block
+		{
+			float: left;
+		}
 	}
+	#block-block-1
+	{
+		position: static;
+		
+		a
+		{
+			height: 43px;
+			line-height: 43px;
+		}
+	}
+	
 	
 	.view-banner .views-field-body .field-content
 	{
@@ -103,7 +140,10 @@
 			color:$blue;
 			text-decoration: none;
 			display: block;
-			
+			font-weight: bold;
+			height: 43px;
+			line-height: 43px;
+			padding: 0 10px;
 		}
 	}
 
@@ -121,11 +161,19 @@
 	#block-system-main-menu
 	{
 		display: none;
+		position: absolute;
+		left: 0px;
+		top: 100%;
+		right: 0px;
+		background: white;
+		padding-bottom: 10px;
 
 		li
 		{
 			list-style: none;
 			display: block;
+			margin: 0;
+			padding: 0;
 
 			a
 			{
