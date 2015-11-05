@@ -27,9 +27,12 @@ body
 
 #block-system-main-menu
 {
+	float: right;
+	
 	li
 	{
 		display: inline-block;
+		list-style: none;
 
 		a
 		{
@@ -105,22 +108,23 @@ body
 	.region-header
 	{
 		float: right;
-		padding-top: 50px;
+		padding-top: 25px;
 		position: relative;
 	}
 }
 
 #block-block-1
 {
-	position: absolute;
-	top: 10px;
-	right: 10px;
+	float: right;
+	margin-left: 10px;
 	
 	a
 	{
 		display: block;
 		padding: 0 10px;
 		float: left;
+		height: 32px;
+		line-height: 32px;
 	}
 	img
 	{
