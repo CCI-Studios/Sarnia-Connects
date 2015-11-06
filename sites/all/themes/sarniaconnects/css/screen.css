@@ -255,6 +255,8 @@ p {
   text-align: center; }
   #block-block-4 .content {
     padding: 30px 0px; }
+  #block-block-4 h2 {
+    padding-bottom: 0; }
 
 #block-views-banner-block {
   position: fixed;
