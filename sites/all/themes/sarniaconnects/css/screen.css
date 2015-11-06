@@ -13,21 +13,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.front #content {
-  display: none; }
-
-#content {
-  padding: 10px;
-  min-height: 300px;
-  margin-top: 10px;
-  border-top: 4px solid #007bc0; }
-  #content #block-system-main {
-    max-width: 942px;
-    margin: 50px auto; }
-
 body {
-  font-family: 'Raleway', sans-serif;
-  -webkit-font-smoothing: antialiased;
   font-size: 18px;
   background: #007bc0;
   color: white; }
@@ -43,6 +29,18 @@ h3 {
 p {
   padding-bottom: 15px;
   line-height: 1.8em; }
+
+.front #content {
+  display: none; }
+
+#content {
+  padding: 10px;
+  min-height: 300px;
+  margin-top: 10px;
+  border-top: 4px solid #007bc0; }
+  #content #block-system-main {
+    max-width: 942px;
+    margin: 50px auto; }
 
 #block-system-main-menu {
   float: right; }
@@ -148,18 +146,17 @@ p {
 
 #block-views-events-block .views-field-title {
   font-size: 2.3em; }
-#block-views-events-block h2 {
-  font-weight: normal; }
-#block-views-events-block span.date-display-single {
+#block-views-events-block .views-field-field-date {
   font-size: 24px;
   font-weight: bold; }
-#block-views-events-block .views-field-field-hosted-by {
-  padding-top: 60px; }
-  #block-views-events-block .views-field-field-hosted-by img {
-    vertical-align: middle;
-    padding-right: 30px;
-    padding-bottom: 10px;
-    padding-top: 20px; }
+#block-views-events-block .views-field-nothing {
+  padding-top: 60px;
+  padding-bottom: 20px; }
+#block-views-events-block .views-field-field-event-sponsor-website,
+#block-views-events-block .views-field-field-venue-sponsor-website {
+  display: inline-block;
+  padding-right: 30px;
+  vertical-align: middle; }
 
 #footer {
   padding: 80px 0px;
