@@ -4,5 +4,16 @@
 @import "main";
 @import "forms";
 @import "front";
-@import "responsive";
 
+@media screen and (max-width: 940px)
+{
+    @import "responsive/maxw940";
+}
+@media screen and (max-width: 640px)
+{
+    @import "responsive/maxw640";
+}
+@media screen and (max-width: 560px)
+{
+    @import "responsive/maxw560";
+}

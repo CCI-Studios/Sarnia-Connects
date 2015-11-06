@@ -8,6 +8,11 @@ a img {
 input, select, textarea, button {
   font-family: inherit; }
 
+body {
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 .front #content {
   display: none; }
 
@@ -287,10 +292,10 @@ p {
 .block > h2 {
   padding-bottom: 60px; }
 
-@media screen and (max-width: 1100px) {
-  #block-views-banner-block {
-    position: relative; } }
 @media screen and (max-width: 940px) {
+  #block-views-banner-block {
+    position: relative; }
+
   #block-views-events-block {
     padding: 50px 0px; }
 
@@ -342,9 +347,6 @@ p {
 
   .view-banner .views-field-body .field-content {
     font-size: 20px; }
-
-  #footer #block-webform-client-block-4 #edit-submitted-email-newsletter-email-address {
-    width: 80%; }
 
   #block-block-5 {
     display: block;
