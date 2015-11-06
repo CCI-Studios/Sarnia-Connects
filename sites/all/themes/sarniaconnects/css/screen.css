@@ -23,7 +23,21 @@ input, select, textarea, button {
 body {
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 18px; }
+  font-size: 18px;
+  background: #007bc0;
+  color: white; }
+
+h2 {
+  font-size: 3.2em;
+  font-weight: normal; }
+
+h3 {
+  font-size: 1.8em;
+  font-weight: normal; }
+
+p {
+  padding-bottom: 15px;
+  line-height: 1.8em; }
 
 #block-system-main-menu {
   float: right; }
@@ -38,46 +52,23 @@ body {
 #region1,
 #region2,
 #footer {
-  position: relative;
-  background: #007bc0;
-  color: white;
-  padding: 80px 0px; }
-  #region1 h2,
-  #region2 h2,
-  #footer h2 {
-    font-size: 3.2em;
-    font-weight: normal; }
-  #region1 .content,
-  #region1 h2,
-  #region1 #footer-inner,
-  #region2 .content,
-  #region2 h2,
-  #region2 #footer-inner,
-  #footer .content,
-  #footer h2,
-  #footer #footer-inner {
+  position: relative; }
+  #region1 > div,
+  #region2 > div,
+  #footer > div {
     max-width: 942px;
     margin: 0 auto;
-    padding: 0 10px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
-    #region1 .content p,
-    #region1 h2 p,
-    #region1 #footer-inner p,
-    #region2 .content p,
-    #region2 h2 p,
-    #region2 #footer-inner p,
-    #footer .content p,
-    #footer h2 p,
-    #footer #footer-inner p {
-      padding-bottom: 15px;
-      line-height: 1.8em; }
-  #region1 .content,
-  #region2 .content,
-  #footer .content {
-    padding: 60px 10px 0px; }
+    padding: 0 20px; }
+
+#region1 {
+  background: #007bc0;
+  padding: 80px 0px; }
 
 #region2 {
-  padding-top: 0; }
+  padding-top: 0;
+  background: url(../images/event-bg.jpg) no-repeat top center;
+  background-size: cover;
+  padding: 120px 0px; }
 
 #header > div {
   position: fixed;
@@ -89,13 +80,15 @@ body {
 
 #header {
   overflow: hidden;
-  height: 120px; }
+  height: 127px; }
   #header #logo {
     float: left; }
   #header .region-header {
     float: right;
     padding-top: 25px;
     position: relative; }
+  #header p {
+    padding-bottom: 0; }
 
 #block-block-1 {
   float: right;
@@ -113,7 +106,8 @@ body {
   height: 500px; }
 
 #main-wrapper {
-  clear: left; }
+  clear: left;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
 
 .backbg {
   height: 500px;
@@ -130,7 +124,7 @@ body {
   z-index: -10; }
 .view-banner .views-field-body {
   color: white;
-  padding: 0 10px;
+  padding: 0 20px;
   position: relative;
   top: 50%;
   max-width: 942px;
@@ -143,46 +137,44 @@ body {
   .view-banner .views-field-body .field-content {
     max-width: 700px;
     font-size: 1.8em;
-    line-height: 1.3em;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+  .view-banner .views-field-body p {
+    line-height: 1.3em; }
 
-#block-views-events-block {
-  background: url(../images/event-bg.jpg) no-repeat;
-  background-size: cover;
-  padding: 100px 0px; }
-  #block-views-events-block .views-field-title {
-    font-size: 2.3em; }
-  #block-views-events-block h2 {
-    font-weight: normal; }
-  #block-views-events-block span.date-display-single {
-    font-size: 24px;
-    font-weight: bold; }
-  #block-views-events-block .views-field-field-hosted-by {
-    padding-top: 60px; }
-    #block-views-events-block .views-field-field-hosted-by img {
-      vertical-align: middle;
-      padding-right: 30px;
-      padding-bottom: 10px;
-      padding-top: 20px; }
+#block-views-events-block .views-field-title {
+  font-size: 2.3em; }
+#block-views-events-block h2 {
+  font-weight: normal; }
+#block-views-events-block span.date-display-single {
+  font-size: 24px;
+  font-weight: bold; }
+#block-views-events-block .views-field-field-hosted-by {
+  padding-top: 60px; }
+  #block-views-events-block .views-field-field-hosted-by img {
+    vertical-align: middle;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 20px; }
 
 #footer {
-  padding: 20px 0px 60px; }
+  padding: 80px 0px;
+  background: #007bc0;
+  position: relative;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
   #footer .region-footer {
-    position: relative; }
+    overflow: hidden;
+    padding-bottom: 80px; }
   #footer .content h2 {
     font-size: 1.8em;
-    padding-left: 0px; }
-  #footer .content {
-    padding-bottom: 80px;
     padding-left: 0px; }
   #footer img {
     vertical-align: middle;
     padding-right: 10px; }
 
-#block-block-3 {
-  display: inline-block; }
-  #block-block-3 h2 {
-    padding-left: 0px; }
+#block-block-3 > .content {
+  float: left;
+  width: 45%;
+  padding-right: 10%; }
 
 #block-webform-client-block-4 a,
 #block-block-3 a,
@@ -197,77 +189,42 @@ body {
 #edit-submitted-email-newsletter-selection {
   display: none; }
 
-#block-webform-client-block-4,
-#block-simplenews-1 {
-  padding-left: 80px;
-  position: absolute;
-  bottom: 62px;
-  right: 0;
-  width: 45%; }
-  #block-webform-client-block-4 h2,
-  #block-simplenews-1 h2 {
-    font-size: 1.8em;
-    padding-left: 0px; }
-  #block-webform-client-block-4 .form-item-submitted-email-newsletter-email-address,
-  #block-webform-client-block-4 .form-item-mail,
-  #block-simplenews-1 .form-item-submitted-email-newsletter-email-address,
-  #block-simplenews-1 .form-item-mail {
-    position: relative;
-    margin: 35px 0px; }
-    #block-webform-client-block-4 .form-item-submitted-email-newsletter-email-address:before,
-    #block-webform-client-block-4 .form-item-mail:before,
-    #block-simplenews-1 .form-item-submitted-email-newsletter-email-address:before,
-    #block-simplenews-1 .form-item-mail:before {
-      content: url(../images/mail-box.png);
-      display: block;
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      bottom: 5px;
-      left: 15px; }
-  #block-webform-client-block-4 label,
-  #block-simplenews-1 label {
-    display: none; }
-  #block-webform-client-block-4 #edit-submitted-email-newsletter-email-address,
-  #block-webform-client-block-4 #edit-mail,
-  #block-simplenews-1 #edit-submitted-email-newsletter-email-address,
-  #block-simplenews-1 #edit-mail {
+.mailchimp-form {
+  overflow: hidden; }
+  .mailchimp-form label {
+    position: absolute;
+    left: -99999px; }
+  .mailchimp-form input {
     border: 0px;
-    width: 84%;
+    width: 430px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 35px 0;
     border-radius: 7px;
-    padding: 15px;
-    padding-bottom: 15px !important;
-    background: #0072b2;
+    padding: 15px 15px 15px 50px;
+    background: #0072b2 url(../images/mail-box.png) no-repeat 15px center;
     color: white;
-    font-size: 18px;
-    padding-left: 50px; }
-  #block-webform-client-block-4 .form-submit,
-  #block-simplenews-1 .form-submit {
+    font-size: 18px; }
+  .mailchimp-form button {
     background: transparent;
     color: white;
     font-size: 22px;
     border: 2px solid white;
-    border-radius: 7px;
+    border-radius: 4px;
     padding: 10px;
     width: 200px;
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); }
-  #block-webform-client-block-4 .content,
-  #block-simplenews-1 .content {
-    padding: 0px; }
-  #block-webform-client-block-4 ::-webkit-input-placeholder,
-  #block-simplenews-1 ::-webkit-input-placeholder {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    -webkit-appearance: none; }
+  .mailchimp-form ::-webkit-input-placeholder {
     color: white; }
-  #block-webform-client-block-4 :-moz-placeholder,
-  #block-simplenews-1 :-moz-placeholder {
+  .mailchimp-form :-moz-placeholder {
     color: white; }
-  #block-webform-client-block-4 ::-moz-placeholder,
-  #block-simplenews-1 ::-moz-placeholder {
+  .mailchimp-form ::-moz-placeholder {
     color: white; }
-  #block-webform-client-block-4 :-ms-input-placeholder,
-  #block-simplenews-1 :-ms-input-placeholder {
+  .mailchimp-form :-ms-input-placeholder {
     color: white; }
 
 .overlay {
@@ -327,26 +284,15 @@ body {
   background: white;
   display: none; }
 
+.block > h2 {
+  padding-bottom: 60px; }
+
 @media screen and (max-width: 1100px) {
   #block-views-banner-block {
     position: relative; } }
 @media screen and (max-width: 940px) {
-  #footer #block-webform-client-block-4 {
-    padding-left: 40px; }
-
-  #block-webform-client-block-4, #block-block-3 {
-    display: block; }
-
-  #footer #block-webform-client-block-4 {
-    position: relative;
-    padding-left: 0px; } }
-@media screen and (max-width: 940px) {
   #block-views-events-block {
     padding: 50px 0px; }
-
-  #footer #block-webform-client-block-4 {
-    padding-top: 40px;
-    width: 100%; }
 
   #header {
     height: 179px; }
@@ -357,7 +303,19 @@ body {
       float: none;
       width: 360px;
       margin: 0 auto; } }
+@media screen and (max-width: 640px) {
+  #block-block-3 > .content {
+    float: none;
+    width: auto;
+    padding-right: 0;
+    padding-bottom: 60px; } }
 @media screen and (max-width: 560px) {
+  h2 {
+    font-size: 2.5em; }
+
+  h3 {
+    font-size: 1.8em; }
+
   #header {
     height: 73px; }
     #header > div {
@@ -421,4 +379,7 @@ body {
       text-align: center; }
       #block-system-main-menu li a {
         display: block;
-        padding: 10px 0px; } }
+        padding: 10px 0px; }
+
+  #region2 {
+    padding: 50px 0; } }

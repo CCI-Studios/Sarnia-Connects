@@ -23,6 +23,24 @@ body
 	font-family: 'Raleway', sans-serif;
 	-webkit-font-smoothing:antialiased;
 	font-size:18px;
+	background:$blue;
+	color:white;
+}
+
+h2
+{
+	font-size: 3.2em;
+	font-weight: normal;
+}
+h3
+{
+	font-size:1.8em;
+	font-weight: normal;
+}
+p
+{
+	padding-bottom: 15px;
+	line-height: 1.8em;
 }
 
 #block-system-main-menu
@@ -47,43 +65,28 @@ body
 #region2,
 #footer
 {	
-	position:relative;
-	background:$blue;
-	color:white;
-	padding:80px 0px;
+	position: relative;
 
-	h2
-	{
-		font-size: 3.2em;
-		font-weight: normal;
-	}
-
-	.content,
-	h2,
-	#footer-inner
+	& > div
 	{
 		max-width: 942px;
 		margin: 0 auto;
-		padding:0 10px;
-		text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-
-		p
-		{
-			padding-bottom:15px;
-			line-height: 1.8em;
-		}
-	}
-
-	.content
-	{
-		padding:60px 10px 0px;
+		padding: 0 20px;
 	}
 }
-
+#region1
+{
+	background: $blue;
+	padding:80px 0px;
+}
 #region2
 {
 	padding-top: 0;
+	background: url(../images/event-bg.jpg) no-repeat top center;
+	background-size: cover;
+	padding: 120px 0px;
 }
+
 
 #header > div
 {
@@ -98,7 +101,7 @@ body
 #header
 {	
 	overflow:hidden;
-	height:120px;
+	height:127px;
 
 	#logo
 	{
@@ -110,6 +113,11 @@ body
 		float: right;
 		padding-top: 25px;
 		position: relative;
+	}
+	
+	p
+	{
+		padding-bottom: 0;
 	}
 }
 
@@ -140,6 +148,7 @@ body
 #main-wrapper
 {
 	clear:left;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
 .backbg
@@ -169,7 +178,7 @@ body
 	.views-field-body 
 	{
 		color: white;
-		padding:0 10px;
+		padding:0 20px;
 		position: relative;
 		top: 50%;
 		max-width: 942px;
@@ -184,18 +193,17 @@ body
 		{
 			max-width: 700px;
 			font-size: 1.8em;
-			line-height: 1.3em;
 			text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+		}
+		p
+		{
+			line-height: 1.3em;
 		}
 	}
 }
 
 #block-views-events-block
 {
-	background:url(../images/event-bg.jpg) no-repeat;
-	background-size:cover;
-	padding:100px 0px;
-
 	.views-field-title
 	{
 		font-size: 2.3em;
@@ -230,22 +238,20 @@ body
 
 #footer
 {	
-	padding: 20px 0px 60px;
+	padding: 80px 0px;
+	background: $blue;
+	position: relative;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 
 	.region-footer
 	{
-		position: relative;
+		overflow: hidden;
+		padding-bottom: 80px;
 	}	
 
 	.content h2
 	{
 		font-size: 1.8em;
-		padding-left:0px;
-	}
-
-	.content
-	{
-		padding-bottom: 80px;
 		padding-left:0px;
 	}
 
@@ -259,11 +265,11 @@ body
 
 #block-block-3
 {
-	display:inline-block;
-
-	h2
+	& > .content
 	{
-		padding-left:0px;
+		float: left;
+		width: 45%;
+		padding-right: 10%;
 	}
 }
 
@@ -289,79 +295,43 @@ body
 	display:none;
 }
 	
-#block-webform-client-block-4,
-#block-simplenews-1
-{	
-
-	padding-left:80px;
-	position: absolute;
-	bottom:62px;
-	right: 0;
-	width: 45%;
-
-	h2
-	{
-		font-size:1.8em;
-		padding-left:0px;
-	}
-
-	.form-item-submitted-email-newsletter-email-address,
-	.form-item-mail
-	{	
-		position: relative;
-		margin: 35px 0px;
-		&:before
-		{
-			content: url(../images/mail-box.png);
-			display: block;
-			position: absolute;
-			width:30px;
-			height: 30px;
-			bottom: 5px;
-			left: 15px;
-		}
-	}
+.mailchimp-form
+{
+	overflow: hidden;
 
 	label
 	{
-		display: none;
+		position: absolute;
+		left: -99999px;
 	}
-
-	#edit-submitted-email-newsletter-email-address,
-	#edit-mail
+	input
 	{
 		border: 0px;
-		width: 84%;
+		width: 430px;
+		max-width: 100%;
+		box-sizing: border-box;
+		margin: 35px 0;
 		border-radius:7px;
-		padding: 15px;
-		padding-bottom:15px !important;
-		background: #0072b2;
+		padding: 15px 15px 15px 50px;
+		background: #0072b2 url(../images/mail-box.png) no-repeat 15px center;
 		color:white;
 		font-size: 18px;
-		padding-left: 50px;
-
 	}
-
-	.form-submit
+	button
 	{
 		background: transparent;
 		color: white;
 		font-size: 22px;
 		border: 2px solid white;
-		border-radius:7px;
+		border-radius:4px;
 		padding: 10px;
 		width: 200px;
 		font-weight: bold;
 		text-transform: uppercase;
 		cursor: pointer;
-		box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+		box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+		-webkit-appearance: none;
 	}
-
-	.content
-	{
-		padding: 0px;
-	}
-
 	::-webkit-input-placeholder {
 	   color: white;
 	}
@@ -459,4 +429,8 @@ body
 	height:500px;
 	background:white;
 	display:none;
+}
+.block > h2
+{
+	padding-bottom: 60px;
 }
