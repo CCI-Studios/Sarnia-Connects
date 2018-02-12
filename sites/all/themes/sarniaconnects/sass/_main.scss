@@ -61,7 +61,8 @@ p
 
 #region1,
 #region2,
-#footer
+#footer-top,
+#footer-bottom
 {	
 	position: relative;
 
@@ -83,6 +84,7 @@ p
 	background: url(../images/event-bg.jpg) no-repeat top center;
 	background-size: cover;
 	padding: 120px 0px;
+	text-align: center;
 }
 
 
@@ -99,7 +101,7 @@ p
 #header
 {	
 	overflow:hidden;
-	height:127px;
+	height:124px;
 
 	#logo
 	{
@@ -189,7 +191,8 @@ p
 
 		.field-content
 		{
-			max-width: 700px;
+			max-width: 750px;
+			margin: 0 auto;
 			font-size: 1.8em;
 			text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 		}
@@ -229,21 +232,32 @@ p
 
 #footer
 {	
-	padding: 80px 0px;
-	background: $blue;
+	padding: 0px;
+	background: white;
+	color: #a7a9ac;
 	position: relative;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 
 	.region-footer
 	{
 		overflow: hidden;
 		padding-bottom: 80px;
-	}	
+	}
+
+	h2
+	{
+		color: $blue;
+		text-align: center;
+	}
 
 	.content h2
 	{
 		font-size: 1.8em;
 		padding-left:0px;
+		text-align: left;
+	}
+	.content h3
+	{
+		color: $blue;
 	}
 
 	img
@@ -251,6 +265,30 @@ p
 		vertical-align: middle;
 		padding-right:10px;
 	}
+}
+
+#footer-top
+{
+	padding-top: 80px;
+
+	a
+	{
+		color: #a7a9ac;
+		text-decoration: none;
+
+		&:hover
+		{
+			text-decoration: underline;
+		}
+	}
+}
+#footer-bottom
+{
+	padding-top: 30px;
+	padding-bottom: 80px;
+	color: white;
+	font-size:13px;
+	background: $blue;
 }
 
 
@@ -266,7 +304,6 @@ p
 
 
 #block-webform-client-block-4,
-#block-block-3,
 #footer-bottom
 {
 	a
@@ -297,46 +334,44 @@ p
 	}
 	input
 	{
-		border: 0px;
+		border: 1px solid #a7a9ac;
 		width: 430px;
 		max-width: 100%;
 		box-sizing: border-box;
 		margin: 35px 0;
-		border-radius:7px;
+		border-radius:5px;
 		padding: 15px 15px 15px 50px;
-		background: #0072b2 url(../images/mail-box.png) no-repeat 15px center;
-		color:white;
+		background: white url(../images/mail-box.png?v2) no-repeat 15px center;
+		color:#a7a9ac;
 		font-size: 18px;
 	}
 	button
 	{
-		background: transparent;
+		border: 0;
+		background: $blue;
 		color: white;
 		font-size: 22px;
-		border: 2px solid white;
 		border-radius:4px;
 		padding: 10px;
 		width: 200px;
-		font-weight: bold;
 		text-transform: uppercase;
 		cursor: pointer;
-		box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 		-webkit-appearance: none;
 	}
 	::-webkit-input-placeholder {
-	   color: white;
+	   color: #a7a9ac;
 	}
 
 	:-moz-placeholder {
-	   color: white;
+	   color: #a7a9ac;
 	}
 
 	::-moz-placeholder {
-	   color: white; 
+	   color: #a7a9ac; 
 	}
 
 	:-ms-input-placeholder {  
-	   color: white;
+	   color: #a7a9ac;
 	}
 }
 
@@ -368,7 +403,6 @@ p
 #block-block-4
 {
 	display:none;
-	background-color:$blue;
 	text-align:center;
 
 	.content
@@ -386,7 +420,7 @@ p
 {
 	position: fixed;
 	width: 100%;
-	background-image: url(../images/Banner1.jpg);
+	background-image: url(../images/banner2.jpg);
 	background-size: cover;
 }
 
@@ -395,13 +429,6 @@ p
 	max-width: 942px;
 	margin: 0 auto;
 	padding:0 10px;
-}
-
-#footer-bottom
-{
-	font-size:12px;
-	border-top: 1px solid white;
-	padding-top: 20px;
 }
 
 #site-by-cci

@@ -159,11 +159,14 @@
     <div id="footer">
       <div>
         <div id="footer-inner">
-        <?php print render($page['footer']); ?>
-        <div id="footer-bottom">
-          <div id="site-by-cci" >&copy; Sarnia Connects <?php print date('Y'); ?></div><div id="box2"><p>Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a></div>
+          <div id="footer-top"><div>
+            <?php print render($page['footer']); ?>
+          </div></div>
+          <div id="footer-bottom"><div>
+            <div id="site-by-cci" >&copy; Sarnia Connects <?php print date('Y'); ?></div>
+            <div id="box2">Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a></div>
+          </div></div>
         </div>
-        </p></div>
       </div>
     </div> <!-- /#footer -->
   </div>
